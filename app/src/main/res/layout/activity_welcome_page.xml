@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/traffic"
+ >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#9ed6ca97"
+     >
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Where's My Car"
+        android:textColor="#fff"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/text1"
+
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:src="@drawable/drop"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:id="@+id/img1"/>
+
+
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:text="Login as Admin"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="@drawable/stroke"
+        android:id="@+id/btn_1"
+        android:layout_below="@id/img1"
+        />
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:text="Login as user"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="@drawable/stroke"
+        android:layout_below="@id/btn_1"
+        android:layout_margin="30dp"
+        />
+
+</RelativeLayout>

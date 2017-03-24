@@ -5,17 +5,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class admin_menu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-    public void opensignup(View v ){
-        Intent i = new Intent(MainActivity.this,admin_menu.class);
+        setContentView(R.layout.activity_admin_menu);
+    }public void adminnmenu(View v ){
+        Intent i = new Intent(admin_menu.this,main_page.class);
         startActivity(i);
-
-
     }
 }

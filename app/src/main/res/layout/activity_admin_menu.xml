@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:weightSum="3"
+    android:background="#fff"   android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.75"
+        android:background="#54b334"
+
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_margin="10dp"
+
+            android:layout_height="100dp"
+            android:src="@drawable/car"
+            android:layout_alignParentRight="true"
+            android:id="@+id/imageView" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TRACK"
+            android:layout_marginLeft="5dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="50dp"
+            android:id="@+id/track_id"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VEHICLE"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textSize="50dp"
+            android:textColor="#fff"
+            android:layout_below="@+id/track_id"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.75"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:background="#3b6cd6"
+            android:layout_margin="2.5dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:src="@drawable/wrench_icon"
+                android:scaleType="centerCrop"
+                android:layout_toRightOf="@+id/sprt_car"
+                android:layout_centerVertical="true"/>
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/sports_car"
+                android:id="@+id/sprt_car"
+
+                android:layout_centerVertical="true"
+                 android:layout_marginLeft="50dp"
+                />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="MAINTENANCE"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:textSize="25dp"
+    android:textColor="#fff"
+    android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:background="#f28a13"
+            android:layout_margin="2.5dp">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Fuel"
+
+                android:textSize="40dp"
+                android:textColor="#fff"
+                android:layout_marginLeft="45dp"
+                android:id="@+id/fuel_1"
+
+               />
+
+
+
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/gas_station"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.75"
+        android:weightSum="2"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:background="#dc4444"
+            android:layout_margin="2.5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:text="Distance"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/distance_tr"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="TRAVELLED"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/distance_tr"
+                />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/distance_icon"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:background="#9b9999"
+            android:layout_margin="2.5dp"
+            >
+
+            <TextView
+                android:text="Reports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_centerHorizontal="true"
+
+              android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:id="@+id/textViewab" />
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/graph_icon"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.75"
+        android:background="#7619e9"
+        android:layout_margin="2dp"
+        android:clickable="true"
+        android:onClick="adminnmenu">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD NEW USER"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:textSize="40dp"
+            android:id="@+id/userid34"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="150dp"/>
+    </RelativeLayout>
+</LinearLayout>

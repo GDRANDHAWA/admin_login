@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:id="@+id/activity_main_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+
+android:background="#75d2c9">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name :"
+        android:textColor="#fff"
+        android:textSize="25dp"
+
+        android:id="@+id/namee"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+
+        android:background="#fff"
+        android:layout_marginTop="10dp"
+      android:layout_below="@+id/namee"
+        android:id="@+id/edt1"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact No. :"
+        android:textColor="#fff"
+        android:layout_below="@+id/edt1"
+        android:textSize="25dp"
+
+        android:id="@+id/contact"/>
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+
+    android:background="#fff"
+
+    android:layout_below="@+id/contact"
+        android:id="@+id/edt2"
+        android:textColor="#000"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Id :"
+        android:textColor="#fff"
+        android:textSize="25dp"
+
+        android:id="@+id/email"
+        android:layout_below="@+id/edt2"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+
+        android:background="#fff"
+
+        android:layout_below="@+id/email"
+        android:id="@+id/edt3"
+        android:textColor="#000"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age :"
+        android:textColor="#fff"
+        android:textSize="25dp"
+
+        android:id="@+id/age1"
+        android:layout_below="@+id/edt3"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+
+        android:background="#fff"
+
+        android:layout_below="@+id/age1"
+        android:id="@+id/age2"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle No. :"
+        android:textColor="#fff"
+        android:textSize="25dp"
+
+        android:id="@+id/vehicleno"
+        android:layout_below="@+id/age2"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+
+        android:background="#fff"
+
+        android:layout_below="@+id/vehicleno"
+        android:id="@+id/vehicleno2"
+        android:textColor="#000"
+        />
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Set User Id :"
+    android:textColor="#fff"
+    android:textSize="25dp"
+
+    android:id="@+id/userid1"
+    android:layout_below="@+id/vehicleno2"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+
+        android:background="#fff"
+
+        android:layout_below="@+id/userid1"
+        android:id="@+id/userid2"
+        android:textColor="#000"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Password :"
+        android:textColor="#fff"
+        android:textSize="25dp"
+
+        android:id="@+id/passwrd"
+        android:layout_below="@+id/userid2"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+
+        android:background="#fff"
+
+        android:layout_below="@+id/passwrd"
+        android:id="@+id/passwrd2"
+        android:textColor="#000"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Password :"
+        android:textColor="#fff"
+        android:textSize="25dp"
+
+        android:id="@+id/cpass"
+        android:layout_below="@+id/passwrd2"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+
+        android:background="#fff"
+
+        android:layout_below="@+id/cpass"
+        android:id="@+id/cpass2"
+        android:textColor="#000"
+        />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/cpass2"
+    android:layout_centerHorizontal="true"
+    android:text="Submit"
+    android:textColor="@color/colorPrimaryDark"
+    android:background="#fff"
+    android:layout_marginTop="5dp"
+    android:onClick="datasubmit"
+    />
+
+</RelativeLayout>
+</ScrollView>
