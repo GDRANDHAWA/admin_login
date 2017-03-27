@@ -16,6 +16,8 @@
         android:background="#3b6cd6"
         android:layout_weight="1"
         android:layout_margin="5dp"
+        android:clickable="true"
+        android:onClick="usrservicentry"
    >
         <ImageView
             android:layout_width="60dp"
@@ -50,7 +52,9 @@
         android:layout_height="match_parent"
         android:background="#f28a13"
         android:layout_weight="1"
-        android:layout_margin="5dp">
+        android:layout_margin="5dp"
+        android:clickable="true"
+        android:onClick="fuelentry">
         <TextView
             android:layout_width="200dp"
             android:layout_height="50dp"
@@ -80,7 +84,9 @@
         android:layout_height="match_parent"
         android:background="#dc4444"
         android:layout_weight="1"
-        android:layout_margin="5dp">
+        android:layout_margin="5dp"
+        android:clickable="true"
+        android:onClick="distrvlentry">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

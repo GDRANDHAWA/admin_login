@@ -11,5 +11,150 @@
         android:layout_height="match_parent"
         android:background="#87060606"></RelativeLayout>
 
+  <TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Maintenance Details"
+android:layout_centerHorizontal="true"
+android:textColor="#fff"
+android:textSize="30dp"
+android:id="@+id/f"
+android:layout_margin="10dp"/>
+<RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="220dp"
+android:background="@drawable/stroke"
+android:id="@+id/relative1"
+android:layout_margin="10dp"
+android:layout_below="@id/f">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Date"
+    android:textColor="#fff"
+    android:textSize="30dp"
+    android:id="@+id/date"
+    android:layout_margin="20dp"/>
+<EditText
+    android:layout_width="300dp"
+    android:layout_height="30dp"
+    android:hint="DD/MM/YYYY"
+    android:layout_marginLeft="20dp"
+    android:textColorHint="#fff"
+    android:gravity="center"
+    android:id="@+id/black"
+    android:layout_margin="20dp"
+    android:layout_toRightOf="@+id/date"
+    android:background="@drawable/adminbrec"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="BillNo."
+    android:textColor="#fff"
+    android:textSize="30dp"
+    android:id="@+id/bill"
+    android:layout_below="@+id/black"
+    android:layout_margin="20dp"/>
+<EditText
+    android:layout_width="310dp"
+    android:layout_height="30dp"
+    android:hint="enter bill no."
+    android:textColorHint="#fff"
+    android:gravity="center"
+    android:layout_margin="20dp"
+    android:id="@+id/billi"
+    android:layout_marginLeft="20dp"
+    android:layout_below="@+id/black"
+    android:layout_toRightOf="@+id/bill"
+    android:background="@drawable/adminbrec"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Amount"
+    android:textColor="#fff"
+    android:textSize="25dp"
+    android:id="@+id/amount"
+    android:layout_below="@+id/billi"
+    android:layout_margin="20dp"/>
+<EditText
+    android:layout_width="360dp"
+    android:layout_height="30dp"
+    android:hint="enter in rupees"
+    android:textColorHint="#fff"
+    android:gravity="center"
+    android:id="@+id/amu"
+    android:layout_marginLeft="20dp"
+    android:layout_margin="20dp"
+    android:layout_below="@+id/billi"
+    android:layout_toRightOf="@id/amount"
+    android:background="@drawable/adminbrec"/>
+</RelativeLayout>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Work "
+android:textSize="30dp"
+android:layout_below="@+id/relative1"
+android:id="@+id/text1"
+android:textColor="#fff"
+android:layout_marginTop="15dp"
+android:layout_marginLeft="10dp"/>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Done:"
+android:textSize="30dp"
+android:layout_below="@+id/text1"
+android:id="@+id/text2"
+android:textColor="#fff"
+android:layout_margin="10dp"/>
+<EditText
+android:layout_width="match_parent"
+android:layout_height="120dp"
+android:layout_toRightOf="@id/text1"
+android:layout_margin="10dp"
+android:layout_below="@+id/relative1"
+android:id="@+id/detail"
+android:background="@drawable/stroke"
+    >
+
+
+</EditText>
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:weightSum="2"
+android:layout_margin="20dp"
+android:layout_centerInParent="true"
+android:layout_below="@+id/detail"
+android:id="@+id/weight"
+    >
+
+
+<Button
+    android:layout_width="100dp"
+    android:layout_height="30dp"
+    android:text="save"
+    android:textColor="#fff"
+    android:background="@drawable/stroke"
+    android:id="@id/btn_1"
+    android:layout_weight="1"
+    android:layout_margin="5dp"
+    android:layout_below="@id/weight"/>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:text="cancel"
+    android:textColor="#fff"
+    android:background="@drawable/stroke"
+    android:layout_weight="1"
+    android:layout_margin="5dp"
+
+    android:layout_toRightOf="@id/btn_1"
+    android:layout_below="@id/amu"/>
+
+</LinearLayout>
+
 </RelativeLayout>
 
