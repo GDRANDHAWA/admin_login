@@ -5,13 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/traffic"
- >
+  >
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 
-        android:background="#9ed6ca97"
-     >
+        android:layout_marginBottom="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bkrec"
+        android:layout_marginTop="30dp">
 
     </RelativeLayout>
     <TextView
@@ -49,6 +53,7 @@
         android:background="@drawable/stroke"
         android:id="@+id/btn_1"
         android:layout_below="@id/img1"
+        android:onClick="adminlgn"
         />
 
     <Button
@@ -61,6 +66,8 @@
         android:background="@drawable/stroke"
         android:layout_below="@id/btn_1"
         android:layout_margin="30dp"
+        android:onClick="userlgn"
+        android:id="@+id/btnn2"
         />
 
 </RelativeLayout>

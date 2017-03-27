@@ -104,7 +104,8 @@
                 android:layout_marginTop="10.0dip"
                 android:background="#b92430"
                 android:text="LOGIN"
-                android:textStyle="bold|italic" />
+                android:textStyle="bold|italic"
+                android:onClick="usrhmpage"/>
 
             <ImageView
                 android:id="@+id/arrow1"

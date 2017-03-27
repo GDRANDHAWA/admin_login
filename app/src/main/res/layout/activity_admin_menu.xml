@@ -147,11 +147,14 @@
                 android:layout_marginLeft="5dp"
                 android:layout_below="@+id/distance_tr"
                 />
+
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="70dp"
-                android:layout_centerInParent="true"
-                android:src="@drawable/distance_icon"/>
+                android:src="@drawable/distance_icon"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imageView2" />
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"

@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".Start_page">
+        <activity android:name=".Welcome_page">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,11 +21,12 @@
         <activity android:name=".main_page" />
         <activity android:name=".MainActivity" />
         <activity android:name=".admin_menu" />
-        <activity android:name=".Welcome_page" />
         <activity android:name=".Admin_signup" />
         <activity android:name=".User_signup" />
         <activity android:name=".Fuel_entry" />
-        <activity android:name=".Maintenance_entry"></activity>
+        <activity android:name=".Maintenance_entry" />
+        <activity android:name=".User_homepage" />
+        <activity android:name=".Distance_travel"></activity>
     </application>
 
 </manifest>

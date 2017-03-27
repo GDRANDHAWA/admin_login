@@ -46,12 +46,12 @@
             android:background="@drawable/username">
 
             <EditText
-                android:id="@+id/username"
+                android:id="@+id/email_et"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:background="@null"
-                android:hint="USERNAME"
+                android:hint="Email Id"
                 android:imeOptions="actionNext"
                 android:paddingLeft="60.0dip"
                 android:textColor="#ffffffff"
@@ -69,7 +69,7 @@
             android:background="@drawable/pass">
 
             <EditText
-                android:id="@+id/password"
+                android:id="@+id/pass_et"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -90,7 +90,9 @@
             android:layout_below="@+id/checkBox1"
             android:layout_marginLeft="20.0dip"
             android:layout_marginRight="20.0dip"
-            android:src="@drawable/login_selector" />
+            android:src="@drawable/login_selector"
+            android:clickable="true"
+            android:onClick="admnlogin"/>
 
         <CheckBox
             android:id="@id/checkBox1"

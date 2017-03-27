@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/distance"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#90898982">
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance Travelled"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:textSize="35dp"
+        android:id="@+id/ftxt"
+        android:layout_margin="40dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:layout_below="@+id/ftxt"
+        android:id="@+id/date"
+        android:layout_margin="20dp"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:hint="DD/MM/YYYY"
+        android:layout_marginLeft="30dp"
+        android:textColorHint="#fff"
+        android:gravity="center"
+        android:id="@+id/black"
+        android:layout_below="@+id/date"
+        android:background="@drawable/adminbrec"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:id="@+id/bill"
+        android:layout_below="@+id/black"
+        android:layout_margin="20dp"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:hint="enter distance in km"
+        android:textColorHint="#fff"
+        android:gravity="center"
+        android:id="@+id/billi"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/bill"
+        android:background="@drawable/adminbrec"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_margin="40dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/billi"
+
+
+        >
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="save"
+            android:textColor="#fff"
+            android:background="@drawable/stroke"
+            android:id="@+id/btn_1"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+           />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="cancel"
+            android:textColor="#fff"
+            android:background="@drawable/stroke"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:layout_toRightOf="@+id/btn_1"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
