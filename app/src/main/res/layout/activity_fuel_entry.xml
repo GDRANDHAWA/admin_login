@@ -116,11 +116,12 @@
             android:paddingRight="50dp"
             android:textColor="#fff"
             android:background="@drawable/save_btn"
-            android:id="@id/btn_1"
+            android:id="@+id/save_btn"
             android:layout_weight="2"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="35dp"
-            android:layout_below="@+id/amt"/>
+            android:layout_below="@+id/amt"
+            android:onClick="addfueld"/>
 
         <Button
             android:layout_width="130dp"

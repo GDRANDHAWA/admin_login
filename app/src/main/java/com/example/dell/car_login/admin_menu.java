@@ -12,7 +12,7 @@ public class admin_menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_menu);
     }public void adminnmenu(View v ){
-        Intent i = new Intent(admin_menu.this,main_page.class);
+        Intent i = new Intent(admin_menu.this,User_signup.class);
         startActivity(i);
     }
 }
