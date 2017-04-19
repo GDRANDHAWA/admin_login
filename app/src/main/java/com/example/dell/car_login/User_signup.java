@@ -1,8 +1,8 @@
 package com.example.dell.car_login;
 
-import android.provider.Settings;
-import android.support.v7.app.AppCompatActivity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -85,6 +85,8 @@ public class User_signup extends AppCompatActivity {
             Toast.makeText(User_signup.this,"password do not match",Toast.LENGTH_SHORT).show();
             return;
         }
+        SharedPreferences sp = getSharedPreferences("admin_info",MODE_PRIVATE);
+        String admin_id2 =sp.getString("admin_id","");
         JSONObject jobj = new JSONObject();
         try {
             jobj.put("namekey",name);
@@ -94,6 +96,8 @@ public class User_signup extends AppCompatActivity {
             jobj.put("useridkey",userid);
             jobj.put("vehiclenokey",vehicleno);
             jobj.put("passkey",passwordd);
+            jobj.put("admin_key",admin_id2);
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -101,17 +105,18 @@ public class User_signup extends AppCompatActivity {
 
         System.out.println(jobj);
 
-        JsonObjectRequest jobjreq = new JsonObjectRequest("http://192.168.0.42/signup.php", jobj, new Response.Listener<JSONObject>() {
+        JsonObjectRequest jobjreq = new JsonObjectRequest("http://"+Ipaddress.ip+"/signup.php", jobj, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 try {
                     if (response.getString("result").equals("done")) {
                         Toast.makeText(User_signup.this, "user registered sucessfully", Toast.LENGTH_SHORT).show();
+                        finish();
                     }
 
 
-                    if (response.getString("result").equals("not done")) {
-                        Toast.makeText(User_signup.this, "Emailid already exist", Toast.LENGTH_SHORT).show();
+                    else if (response.getString("result").equals("not done")) {
+                        Toast.makeText(User_signup.this, "UserId already exist", Toast.LENGTH_SHORT).show();
                     }
 
 

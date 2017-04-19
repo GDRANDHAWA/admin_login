@@ -38,7 +38,7 @@
         android:layout_marginLeft="30dp"
         android:textColorHint="#fff"
         android:gravity="center"
-        android:id="@+id/black"
+        android:id="@+id/ddate"
         android:layout_below="@+id/date"
         android:background="@drawable/adminbrec"/>
     <TextView
@@ -48,7 +48,7 @@
         android:textColor="#fff"
         android:textSize="30dp"
         android:id="@+id/bill"
-        android:layout_below="@+id/black"
+        android:layout_below="@+id/ddate"
         android:layout_margin="20dp"/>
     <EditText
         android:layout_width="300dp"
@@ -56,43 +56,49 @@
         android:hint="enter distance in km"
         android:textColorHint="#fff"
         android:gravity="center"
-        android:id="@+id/billi"
+        android:id="@+id/ddist"
         android:layout_marginLeft="30dp"
         android:layout_below="@+id/bill"
         android:background="@drawable/adminbrec"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:weightSum="2"
-        android:layout_margin="40dp"
-        android:layout_centerInParent="true"
-        android:layout_below="@+id/billi"
-
+        android:weightSum="4"
+        android:layout_below="@+id/ddist"
+        android:orientation="horizontal"
+        android:layout_marginTop="80dp"
 
         >
 
 
         <Button
-            android:layout_width="100dp"
-            android:layout_height="30dp"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
             android:text="save"
+            android:paddingRight="50dp"
             android:textColor="#fff"
-            android:background="@drawable/stroke"
-            android:id="@+id/btn_1"
-            android:layout_weight="1"
-            android:layout_margin="20dp"
-           />
+            android:background="@drawable/save_btn"
+            android:id="@+id/dsave_btn"
+            android:layout_weight="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_below="@+id/amt"
+            android:onClick="adddis"/>
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
             android:text="cancel"
+            android:paddingRight="50dp"
             android:textColor="#fff"
-            android:background="@drawable/stroke"
-            android:layout_weight="1"
-            android:layout_margin="20dp"
+            android:background="@drawable/cancel_btn"
+            android:layout_weight="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
             android:layout_toRightOf="@+id/btn_1"
-            />
+            android:layout_below="@+id/amt"
+            android:id="@+id/dcnclbtn"
+            android:onClick="dcancel"/>
 
     </LinearLayout>
 

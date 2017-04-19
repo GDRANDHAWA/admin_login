@@ -42,7 +42,9 @@ android:layout_below="@id/f">
     android:layout_marginLeft="20dp"
     android:textColorHint="#fff"
     android:gravity="center"
-    android:id="@+id/black"
+    android:onClick="onClick"
+    android:focusable="false"
+    android:id="@+id/mdate"
     android:layout_margin="20dp"
     android:layout_toRightOf="@+id/date"
     android:background="@drawable/adminbrec"/>
@@ -53,7 +55,7 @@ android:layout_below="@id/f">
     android:textColor="#fff"
     android:textSize="30dp"
     android:id="@+id/bill"
-    android:layout_below="@+id/black"
+    android:layout_below="@+id/mdate"
     android:layout_margin="20dp"/>
 <EditText
     android:layout_width="310dp"
@@ -62,9 +64,9 @@ android:layout_below="@id/f">
     android:textColorHint="#fff"
     android:gravity="center"
     android:layout_margin="20dp"
-    android:id="@+id/billi"
+    android:id="@+id/mbillno"
     android:layout_marginLeft="20dp"
-    android:layout_below="@+id/black"
+    android:layout_below="@+id/mdate"
     android:layout_toRightOf="@+id/bill"
     android:background="@drawable/adminbrec"/>
 <TextView
@@ -74,7 +76,7 @@ android:layout_below="@id/f">
     android:textColor="#fff"
     android:textSize="25dp"
     android:id="@+id/amount"
-    android:layout_below="@+id/billi"
+    android:layout_below="@+id/mbillno"
     android:layout_margin="20dp"/>
 <EditText
     android:layout_width="360dp"
@@ -85,7 +87,7 @@ android:layout_below="@id/f">
     android:id="@+id/amu"
     android:layout_marginLeft="20dp"
     android:layout_margin="20dp"
-    android:layout_below="@+id/billi"
+    android:layout_below="@+id/mbillno"
     android:layout_toRightOf="@id/amount"
     android:background="@drawable/adminbrec"/>
 </RelativeLayout>
@@ -123,41 +125,46 @@ android:background="@drawable/stroke"
 
 
 </EditText>
-<LinearLayout
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:weightSum="2"
-android:layout_margin="20dp"
-android:layout_centerInParent="true"
-android:layout_below="@+id/detail"
-android:id="@+id/weight"
-    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_below="@+id/detail"
+        android:orientation="horizontal"
+
+        >
 
 
-<Button
-    android:layout_width="100dp"
-    android:layout_height="30dp"
-    android:text="save"
-    android:textColor="#fff"
-    android:background="@drawable/stroke"
-    android:id="@id/btn_1"
-    android:layout_weight="1"
-    android:layout_margin="5dp"
-    android:layout_below="@id/weight"/>
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:text="save"
+            android:paddingRight="50dp"
+            android:textColor="#fff"
+            android:background="@drawable/save_btn"
+            android:id="@+id/save_saveservice"
+            android:layout_weight="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_below="@+id/amt"
+            android:onClick="addmaintenance"/>
 
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="30dp"
-    android:text="cancel"
-    android:textColor="#fff"
-    android:background="@drawable/stroke"
-    android:layout_weight="1"
-    android:layout_margin="5dp"
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:text="cancel"
+            android:paddingRight="50dp"
+            android:textColor="#fff"
+            android:background="@drawable/cancel_btn"
+            android:layout_weight="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/btn_1"
+            android:layout_below="@+id/detail"
+            android:id="@+id/cancel_man"
+            android:onClick="mncncl"/>
 
-    android:layout_toRightOf="@id/btn_1"
-    android:layout_below="@id/amu"/>
-
-</LinearLayout>
+    </LinearLayout>
 
 </RelativeLayout>
 

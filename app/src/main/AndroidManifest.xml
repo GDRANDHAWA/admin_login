@@ -26,7 +26,13 @@
         <activity android:name=".Fuel_entry" />
         <activity android:name=".Maintenance_entry" />
         <activity android:name=".User_homepage" />
-        <activity android:name=".Distance_travel"></activity>
+        <activity android:name=".Distance_travel" />
+        <activity android:name=".Vehicleadd" />
+        <activity android:name=".Fuel_viewone" />
+        <activity android:name=".Fuel_viewsecond" />
+        <activity android:name=".driver_profile" />
+        <activity android:name=".Viewdriver" />
+        <activity android:name=".Viewvehicle"></activity>
     </application>
 
 </manifest>

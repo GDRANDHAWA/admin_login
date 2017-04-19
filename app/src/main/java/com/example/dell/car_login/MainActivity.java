@@ -1,6 +1,7 @@
 package com.example.dell.car_login;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,8 +26,7 @@ public class MainActivity extends AppCompatActivity {
         password_et = (EditText) findViewById(R.id.pass_et);
     }
     public void opensignup(View v ){
-        Intent i = new Intent(MainActivity.this,admin_menu.class);
-        startActivity(i);
+
 
 
     }
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        JsonObjectRequest jobjreq = new JsonObjectRequest("http://192.168.0.81/Cartracking/login.php", job,
+        JsonObjectRequest jobjreq = new JsonObjectRequest("http://"+Ipaddress.ip+"/Cartracking/login.php", job,
 
                 new Response.Listener<JSONObject>() {
                     @Override
@@ -64,7 +64,11 @@ public class MainActivity extends AppCompatActivity {
                         try {
                             if(response.getString("key").equals("done"))
                             {
-
+                                SharedPreferences.Editor sp =getSharedPreferences("admin_info",MODE_PRIVATE).edit();
+                                sp.putString("admin_id",response.getString("Aid"));
+                                sp.commit();
+                                Intent i = new Intent(MainActivity.this,admin_menu.class);
+                                startActivity(i);
                             }
                             else {
                                 Toast.makeText(MainActivity.this , "error" , Toast.LENGTH_SHORT).show();

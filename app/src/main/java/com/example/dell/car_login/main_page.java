@@ -1,8 +1,7 @@
 package com.example.dell.car_login;
 
-import android.provider.Settings;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -101,7 +100,7 @@ public class main_page extends AppCompatActivity {
 
         System.out.println(jobj);
 
-        JsonObjectRequest jobjreq = new JsonObjectRequest("http://192.168.0.60/signup.php", jobj, new Response.Listener<JSONObject>() {
+        JsonObjectRequest jobjreq = new JsonObjectRequest("http://"+Ipaddress.ip+"/signup.php", jobj, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 try {

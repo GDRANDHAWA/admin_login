@@ -55,7 +55,7 @@
                 android:background="@drawable/username">
 
                 <EditText
-                    android:id="@+id/username"
+                    android:id="@+id/userid"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -79,7 +79,7 @@
                 android:background="@drawable/pass">
 
                 <EditText
-                    android:id="@+id/password"
+                    android:id="@+id/userpassword"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"

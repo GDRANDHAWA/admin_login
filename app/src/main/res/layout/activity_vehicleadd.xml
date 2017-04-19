@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/add">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Vehicle"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:id="@+id/v"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle No."
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:layout_below="@+id/f"
+            android:id="@+id/no"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:hint="enter vehicle no."
+            android:textColor="#fff"
+            android:layout_marginLeft="30dp"
+            android:textColorHint="#fff"
+            android:gravity="center"
+            android:id="@+id/e1"
+            android:layout_below="@+id/no"
+            android:background="@drawable/adminbrec"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Type"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:id="@+id/type"
+            android:layout_below="@id/e1"
+            android:layout_margin="20dp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:hint="enter vehicle type"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:gravity="center"
+            android:id="@+id/e2"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/type"
+            android:background="@drawable/adminbrec"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make In Year "
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:id="@+id/year"
+            android:layout_below="@+id/e2"
+            android:layout_margin="20dp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:hint="enter make in year"
+            android:textColorHint="#fff"
+            android:gravity="center"
+            android:id="@+id/e3"
+            android:textColor="#fff"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/year"
+            android:background="@drawable/adminbrec"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Colour"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:id="@+id/colour"
+            android:layout_below="@+id/e3"
+            android:layout_margin="20dp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:hint="enter Vehicle colour"
+            android:textColorHint="#fff"
+            android:gravity="center"
+            android:id="@+id/e4"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/colour"
+            android:background="@drawable/adminbrec"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Company"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:id="@+id/company"
+            android:layout_below="@id/e4"
+            android:layout_margin="20dp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:hint="enter Vehicle company"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:id="@+id/e5"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/company"
+            android:background="@drawable/adminbrec"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Name"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:id="@+id/name"
+            android:layout_below="@+id/e5"
+            android:layout_margin="20dp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:hint="enter Vehicle name"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:id="@+id/e6"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/name"
+            android:background="@drawable/adminbrec"/>
+
+
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:text="save"
+            android:paddingRight="50dp"
+            android:textColor="#fff"
+            android:background="@drawable/save_btn"
+            android:id="@id/btn_1"
+
+
+            android:onClick="save_veh"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_below="@+id/e6"/>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:text="cancel"
+            android:paddingRight="50dp"
+            android:textColor="#fff"
+            android:background="@drawable/cancel_btn"
+            android:id="@+id/cnclveh"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/btn_1"
+            android:layout_below="@+id/e6"
+            android:onClick="cancel_veh"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+</ScrollView>
