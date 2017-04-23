@@ -18,6 +18,8 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="#54b334"
+        android:clickable="true"
+        android:onClick="tracker"
 
         >
         <ImageView
@@ -62,7 +64,9 @@
             android:layout_height="match_parent"
             android:layout_weight="0.9"
             android:background="#3b6cd6"
-            android:layout_margin="2.5dp">
+            android:layout_margin="2.5dp"
+            android:clickable="true"
+            android:onClick="Mndetail">
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="60dp"
@@ -96,7 +100,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1.1"
             android:background="#f28a13"
-            android:layout_margin="2.5dp">
+            android:layout_margin="2.5dp"
+            android:clickable="true"
+            android:onClick="viewdfuel">
             <TextView
                 android:layout_width="200dp"
                 android:layout_height="50dp"
@@ -106,8 +112,7 @@
                 android:textColor="#fff"
                 android:layout_marginLeft="45dp"
                 android:id="@+id/fuel_1"
-                android:clickable="true"
-                android:onClick="viewfuel"
+
 
                />
 
@@ -136,7 +141,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1.1"
             android:background="#dc4444"
-            android:layout_margin="2.5dp">
+            android:layout_margin="2.5dp"
+            android:clickable="true"
+            android:onClick="viewdistt">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -272,7 +279,7 @@
                 android:id="@+id/avatar"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/driver1600"
+                android:src="@drawable/admin_logo"
                 android:layout_marginTop="15dp" />
 
             <LinearLayout
@@ -309,31 +316,35 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/R1"
                 android:clickable="true">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/vehicle_ad"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/vehicle_logo"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="UserId :"
+
+                    android:id="@+id/vehicle_add"
+                    android:layout_toRightOf="@+id/vehicle_ad"
+                    android:text="ADD Vehicle"
+                    android:layout_centerVertical="true"
                     android:textColor="#000"
+                    android:gravity="center"
                     android:textSize="25dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="20dp"
-                    android:id="@+id/adm1"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="user_idnumber"
-                    android:textColor="#000"
-                    android:textSize="25dp"
-                    android:layout_toRightOf="@+id/adm1"
-                    android:id="@+id/tt3"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="5dp"/>
+
+                    android:layout_marginLeft="5dp"
+
+                    android:clickable="true"
+                    android:onClick="addvehicle"
+                  />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="#ccc"
                     android:layout_marginTop="10dp"
-                    android:layout_below="@id/tt3"/>
+                    android:layout_below="@+id/vehicle_ad"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -365,7 +376,7 @@
                     android:layout_marginLeft="5dp"
 
 
-                    android:onClick="viewdprofile"/>
+                 />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -412,7 +423,122 @@
                     android:layout_below="@id/rate_text"
                     android:layout_marginTop="15dp"/>
 
+
             </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true">
+
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/vehicle_img"
+                android:layout_centerVertical="true"
+                android:src="@drawable/vehicle_logo"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/vehview"
+                android:layout_toRightOf="@+id/vehicle_img"
+                android:text="View Vehicle"
+             android:layout_centerVertical="true"
+                android:textColor="#000"
+                android:gravity="center"
+                android:textSize="25dp"
+
+                android:layout_marginLeft="5dp"
+
+                android:clickable="true"
+                android:onClick="view_vehicle"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc"
+                android:layout_below="@id/vehicle_img"
+                android:layout_marginTop="15dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true">
+
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/vehicle_img2"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/vehicle_logo"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/veh_del"
+                    android:layout_toRightOf="@+id/vehicle_img2"
+                    android:text="Delete Vehicle"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:textSize="25dp"
+
+                    android:layout_marginLeft="5dp"
+
+                    android:clickable="true"
+              />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ccc"
+                    android:layout_below="@id/vehicle_img2"
+                    android:layout_marginTop="15dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true">
+
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/drvr_img3"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/drvr12"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/driver_del"
+                    android:layout_toRightOf="@+id/drvr_img3"
+                    android:text="Delete Driver"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:textSize="25dp"
+
+                    android:layout_marginLeft="5dp"
+
+                    android:clickable="true"
+                />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ccc"
+                    android:layout_below="@id/drvr_img3"
+                    android:layout_marginTop="15dp"/>
+
+
+            </RelativeLayout>
+
+
+
+
 
 
 
@@ -439,6 +565,7 @@
                     android:onClick="logout1"/>
 
             </RelativeLayout>
+
 
 
         </LinearLayout>

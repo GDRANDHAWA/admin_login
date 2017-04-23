@@ -1,6 +1,7 @@
 package com.example.dell.car_login;
 
 import android.app.DatePickerDialog;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -103,6 +104,10 @@ public class Maintenance_entry extends AppCompatActivity {
 
             return;
         }
+        SharedPreferences sp = getSharedPreferences("driver_info",MODE_PRIVATE);
+
+
+        String driver_vehiclenum = sp.getString("vehicle_no" , "");
 
         JSONObject jobj = new JSONObject();
         try {
@@ -110,6 +115,7 @@ public class Maintenance_entry extends AppCompatActivity {
             jobj.put("mdatekey", mdate);
             jobj.put("mbillkey", mbillno);
             jobj.put("workkey", mworkdone);
+            jobj.put("mveh_numkey" ,driver_vehiclenum );
 
         } catch (JSONException e) {
             e.printStackTrace();

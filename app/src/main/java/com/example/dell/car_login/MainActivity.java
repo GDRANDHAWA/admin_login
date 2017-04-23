@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         password_et = (EditText) findViewById(R.id.pass_et);
     }
     public void opensignup(View v ){
+        Intent i = new Intent(MainActivity.this,Admin_signup.class);
+        startActivity(i);
 
 
 
@@ -66,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
                             {
                                 SharedPreferences.Editor sp =getSharedPreferences("admin_info",MODE_PRIVATE).edit();
                                 sp.putString("admin_id",response.getString("Aid"));
+
                                 sp.commit();
                                 Intent i = new Intent(MainActivity.this,admin_menu.class);
                                 startActivity(i);

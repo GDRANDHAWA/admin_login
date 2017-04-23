@@ -17,7 +17,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class Vehicleadd extends AppCompatActivity {
-     EditText Vnum,Vtype,Minyr,Vcolor,Vcompany,Vname;
+     EditText Vnum,Vtype,Minyr,Vcolor,Vcompany,Vname,fuelt;
     Button addveh,canclveh;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,7 @@ public class Vehicleadd extends AppCompatActivity {
         Vname=(EditText)findViewById(R.id.e6);
         addveh= (Button)findViewById(R.id.btn_1);
         canclveh= (Button)findViewById(R.id.cnclveh);
+        fuelt= (EditText) findViewById(R.id.fuel2);
 
     }
 
@@ -43,6 +44,8 @@ public class Vehicleadd extends AppCompatActivity {
         String vcolor = Vcolor.getText().toString();
         String vcompany = Vcompany.getText().toString();
         String vname = Vname.getText().toString();
+        String fuel;
+        fuel = fuelt.getText ().toString ();
 
         if (vnumber.equals("")) {
             Toast.makeText(Vehicleadd.this,"Please enter Vehicle number",Toast.LENGTH_SHORT).show();
@@ -67,6 +70,8 @@ public class Vehicleadd extends AppCompatActivity {
             Toast.makeText(Vehicleadd.this,"Please enter Vehicle Color",Toast.LENGTH_SHORT).show();
 
             return ;
+
+
         }
         if (vcompany.equals("")) {
             Toast.makeText(Vehicleadd.this,"Please enter Vehicle Company",Toast.LENGTH_SHORT).show();
@@ -92,6 +97,7 @@ public class Vehicleadd extends AppCompatActivity {
             jobj.put("company_key",vcompany);
             jobj.put("vname_key",vname);
             jobj.put("admn_id",admin_id);
+            jobj.put("fuel_key",fuel);
 
 
 

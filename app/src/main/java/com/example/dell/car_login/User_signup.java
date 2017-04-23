@@ -4,7 +4,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -17,8 +16,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class User_signup extends AppCompatActivity {
-    EditText nameet,contactet,emailet,ageet,vehiclenoet,useret,passet,cpasset;
-    Button btn ;
+    EditText nameet,contactet,emailet,ageet,vehiclenoet,useret,passet,cpasset,dlicense;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +30,7 @@ public class User_signup extends AppCompatActivity {
         useret=(EditText)findViewById(R.id.userid2);
         passet=(EditText)findViewById(R.id.passwrd2);
         cpasset=(EditText)findViewById(R.id.cpass2);
-
+        dlicense=(EditText)findViewById(R.id.drvrlicense);
     }
     public void datasubmit(View b) {
         String name = nameet.getText().toString();
@@ -42,6 +41,7 @@ public class User_signup extends AppCompatActivity {
         String userid = useret.getText().toString();
         String passwordd = passet.getText().toString();
         String cpass = cpasset.getText().toString();
+        String drlicense = dlicense.getText().toString();
         if (name.equals("")) {
             Toast.makeText(User_signup.this,"Please enter name",Toast.LENGTH_SHORT).show();
 
@@ -71,6 +71,11 @@ public class User_signup extends AppCompatActivity {
 
             return ;
         }
+        if (drlicense.equals("")) {
+            Toast.makeText(User_signup.this,"Please enter Driving license number",Toast.LENGTH_SHORT).show();
+
+            return ;
+        }
         if (passwordd.equals("")) {
             Toast.makeText(User_signup.this,"Please enter password",Toast.LENGTH_SHORT).show();
 
@@ -96,6 +101,7 @@ public class User_signup extends AppCompatActivity {
             jobj.put("useridkey",userid);
             jobj.put("vehiclenokey",vehicleno);
             jobj.put("passkey",passwordd);
+            jobj.put("license_key",drlicense);
             jobj.put("admin_key",admin_id2);
 
         } catch (JSONException e) {

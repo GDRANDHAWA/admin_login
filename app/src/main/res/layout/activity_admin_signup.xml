@@ -23,11 +23,15 @@
         android:hint= "enter name"
         android:gravity="center"
         android:textColorHint="#000"
-        android:layout_centerHorizontal="true"
         android:background="@drawable/rectangle"
-        android:id="@+id/user"
-        android:layout_marginTop="30dp"
-        android:layout_below="@id/textt"/>
+        android:id="@+id/adminname"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/textt"
+        android:textColor="#000"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignStart="@+id/email"
+        android:imeOptions="actionNext"/>
+
     <EditText
         android:layout_width="300dp"
         android:layout_height="30dp"
@@ -37,8 +41,37 @@
         android:layout_centerHorizontal="true"
         android:background="@drawable/rectangle"
         android:id="@+id/email"
-        android:layout_below="@id/user"
-        android:layout_marginTop="50dp"/>
+        android:textColor="#000"
+        android:layout_below="@id/adminname"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="40dp"
+        android:imeOptions="actionNext"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:hint="DOB DD-MM-YYYY"
+        android:gravity="center"
+        android:textColorHint="#000"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle"
+        android:id="@+id/dob"
+        android:layout_below="@id/email"
+        android:layout_marginTop="40dp"
+        android:imeOptions="actionNext"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:hint="Contact No."
+        android:gravity="center"
+        android:textColorHint="#000"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle"
+        android:id="@+id/cntct"
+        android:layout_below="@id/dob"
+        android:layout_marginTop="40dp"
+        android:imeOptions="actionNext"/>
     <EditText
         android:layout_width="300dp"
         android:layout_height="30dp"
@@ -48,8 +81,11 @@
         android:layout_centerHorizontal="true"
         android:background="@drawable/rectangle"
         android:id="@+id/pass"
-        android:layout_marginTop="50dp"
-        android:layout_below="@id/email"/>
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/cntct"
+        android:textColor="#000"
+        android:inputType="textPassword"
+        android:imeOptions="actionNext"/>
     <EditText
         android:layout_width="300dp"
         android:layout_height="30dp"
@@ -61,7 +97,10 @@
         android:id="@+id/cpass"
         android:layout_below="@id/pass"
 
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="40dp"
+        android:textColor="#000"
+        android:inputType="textPassword"
+        android:imeOptions="actionDone"/>
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -72,5 +111,7 @@
         android:onClick="admreg"
         android:id="@+id/adsubmt"
         android:clickable="true"/>
+
+  />
 
 </RelativeLayout>

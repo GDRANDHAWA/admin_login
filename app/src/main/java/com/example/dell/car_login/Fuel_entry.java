@@ -2,8 +2,8 @@ package com.example.dell.car_login;
 
 import android.app.DatePickerDialog;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -55,10 +55,10 @@ public class Fuel_entry extends AppCompatActivity {
                 }, year, month, day);
                 mDatePicker.setTitle("Please select date");
                 // TODO Hide Future Date Here
-                mDatePicker.getDatePicker().setMaxDate(System.currentTimeMillis());
+                //mDatePicker.getDatePicker().setMaxDate(System.currentTimeMillis());
 
                 // TODO Hide Past Date Here
-                //  mDatePicker.getDatePicker().setMinDate(System.currentTimeMillis());
+                 //mDatePicker.getDatePicker().setMinDate(System.currentTimeMillis());
                 mDatePicker.show();
             }
         });
@@ -101,6 +101,9 @@ public class Fuel_entry extends AppCompatActivity {
         SharedPreferences sp = getSharedPreferences("driver_info",MODE_PRIVATE);
 
 
+        String driver_vehiclenum = sp.getString("vehicle_no" , "");
+
+
         JSONObject jobj = new JSONObject();
         try {
             jobj.put("amtkey",amountt);
@@ -108,6 +111,8 @@ public class Fuel_entry extends AppCompatActivity {
             jobj.put("billkey",billno);
             jobj.put("fuelkey",fuel);
             jobj.put("did" , sp.getString("did",""));
+            jobj.put("veh_numkey" ,driver_vehiclenum );
+
 
         } catch (JSONException e) {
             e.printStackTrace();

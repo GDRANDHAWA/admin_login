@@ -2,8 +2,8 @@ package com.example.dell.car_login;
 
 import android.app.DatePickerDialog;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -80,10 +80,14 @@ public class Distance_travel extends AppCompatActivity {
         }
 
         if (tdist.equals("")) {
-            Toast.makeText(Distance_travel.this,"Please enter Travel Distance",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Distance_travel.this,"Please enter Travel Distance in Km",Toast.LENGTH_SHORT).show();
 
             return ;
         }
+        SharedPreferences sp = getSharedPreferences("driver_info",MODE_PRIVATE);
+
+
+        String driver_vehiclenum = sp.getString("vehicle_no" , "");
 
 
 
@@ -93,6 +97,8 @@ public class Distance_travel extends AppCompatActivity {
         try {
             jobj.put("datedistt_key",distdate);
             jobj.put("travldist",tdist);
+            jobj.put("fveh_numkey" ,driver_vehiclenum );
+            jobj.put("did" , sp.getString("did",""));
 
 
         } catch (JSONException e) {

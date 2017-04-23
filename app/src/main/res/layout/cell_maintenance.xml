@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/coolbackground"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle No. : "
+            android:textSize="20dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:id="@+id/id_vehnumbr"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date : "
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:id="@+id/id_daate"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bill No :"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:id="@+id/id_billnumbr"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount in Rs: "
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:id="@+id/id_amttt"
+            android:textSize="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Work Done : "
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:id="@+id/id_wrkdne"
+            android:textSize="20dp"/>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

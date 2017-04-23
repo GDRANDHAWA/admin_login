@@ -89,13 +89,25 @@
     <EditText
         android:layout_width="300dp"
         android:layout_height="30dp"
+        android:hint= "enter Driving license no."
+        android:gravity="center"
+        android:textColorHint="#000"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle"
+        android:id="@+id/drvrlicense"
+        android:layout_margin="10dp"
+        android:layout_below="@id/vehicleno2"
+        android:textColor="#000"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="30dp"
         android:hint="Set user id"
         android:gravity="center"
         android:textColorHint="#000"
         android:layout_centerHorizontal="true"
         android:background="@drawable/rectangle"
         android:id="@+id/userid2"
-        android:layout_below="@id/vehicleno2"
+        android:layout_below="@id/drvrlicense"
         android:layout_margin="10dp"
         android:textColor="#000"/>
     <EditText

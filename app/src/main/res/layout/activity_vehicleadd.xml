@@ -115,11 +115,30 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Fuel Type"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:id="@+id/fueltype"
+            android:layout_below="@+id/e4"
+            android:layout_margin="20dp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:hint="fuel type"
+            android:textColorHint="#fff"
+            android:gravity="center"
+            android:id="@+id/fuel2"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/fueltype"
+            android:background="@drawable/adminbrec"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Vehicle Company"
             android:textColor="#fff"
             android:textSize="30dp"
             android:id="@+id/company"
-            android:layout_below="@id/e4"
+            android:layout_below="@id/fuel2"
             android:layout_margin="20dp"/>
         <EditText
             android:layout_width="300dp"

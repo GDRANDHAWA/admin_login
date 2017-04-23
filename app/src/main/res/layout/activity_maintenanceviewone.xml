@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fuel_viewone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/maintenace_view">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#af383333"></RelativeLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/cbckgd"
+        android:layout_marginTop="80dp"
+        android:hint="Enter Vehicle Number"
+        android:id="@+id/fedt21"
+        android:textColorHint="#000"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="100dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/cbckgd"
+
+        android:hint="From Date"
+        android:id="@+id/fedt22"
+        android:textColorHint="#000"
+        android:textColor="#000"
+        android:paddingLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/fedt21"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/cbckgd"
+
+        android:hint="To Date"
+        android:id="@+id/fedt23"
+        android:textColorHint="#000"
+        android:textColor="#000"
+        android:paddingLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/fedt22"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_below="@+id/fedt21"
+        android:orientation="horizontal"
+        android:layout_marginTop="200dp"
+
+        >
+
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:text="NEXT"
+            android:paddingRight="50dp"
+            android:textColor="#fff"
+            android:background="@drawable/save_btn"
+            android:id="@+id/fnext_btn"
+            android:layout_weight="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/txtnum"
+            android:onClick="viewmaintenaced"/>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:text="cancel"
+            android:paddingRight="50dp"
+            android:textColor="#fff"
+            android:background="@drawable/cancel_btn"
+            android:layout_weight="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/fnext_btn"
+
+            android:id="@+id/mncnclbtn"
+            android:onClick="mncancel"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
