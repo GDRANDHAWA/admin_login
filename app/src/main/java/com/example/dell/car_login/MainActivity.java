@@ -68,6 +68,9 @@ public class MainActivity extends AppCompatActivity {
                             {
                                 SharedPreferences.Editor sp =getSharedPreferences("admin_info",MODE_PRIVATE).edit();
                                 sp.putString("admin_id",response.getString("Aid"));
+                                sp.putString("name_id",response.getString("Name"));
+
+
 
                                 sp.commit();
                                 Intent i = new Intent(MainActivity.this,admin_menu.class);

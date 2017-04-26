@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fuelreportsecond"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/service">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#af383333"></RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/strokereport"
+        android:layout_margin="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From Date:"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/mfdate"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/mfdate"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:text="DD/MM/YYYY"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:id="@+id/mfdate2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To Date:"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#fff"
+            android:layout_below="@+id/mfdate"
+            android:id="@+id/tmdate"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/mfdate"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:text="DD/MM/YYYY"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:id="@+id/tmdate2"
+            android:layout_below="@+id/mfdate2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount in Rs :"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#fff"
+            android:layout_below="@+id/tmdate"
+            android:id="@+id/mtotalamt"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/mtotalamt"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            android:text="Amount"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:id="@+id/mamt2"
+            android:layout_below="@+id/tmdate2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Costly work done :"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#fff"
+            android:layout_below="@+id/mtotalamt"
+            android:id="@+id/costlywork"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/costlywork"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:text="Work done"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:id="@+id/costlywork2"
+            android:layout_below="@+id/mamt2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATE :"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/costlywork"
+            android:textColor="#fff"
+            android:id="@+id/costlyworkdate"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/costlyworkdate"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            android:text="DD/MM/YYYY"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:id="@+id/costlyworkdate2"
+            android:layout_below="@+id/costlywork2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver:"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/costlyworkdate"
+            android:textColor="#fff"
+            android:id="@+id/dname"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/dname"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            android:text="Driver Name"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:id="@+id/dname2"
+            android:layout_below="@+id/costlyworkdate2"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRINT"
+            android:layout_below="@+id/dname"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/stroke"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -25,7 +25,7 @@ public class Cartracking extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_cartracking);
         stt1= getIntent().getStringExtra("vehnum");
 
         // Getting reference to the SupportMapFragmegetMap();nt of activity_main.xml
@@ -44,7 +44,7 @@ public class Cartracking extends FragmentActivity {
                     e.printStackTrace();
                 }
 
-                JsonObjectRequest req = new JsonObjectRequest("http://192.168.1.114/Cartracking/locations.php",jsob ,  new Response.Listener<JSONObject>() {
+                JsonObjectRequest req = new JsonObjectRequest("http://"+Ipaddress.ip+"/Cartracking/locations.php",jsob ,  new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject j) {
 

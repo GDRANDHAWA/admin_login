@@ -1,8 +1,7 @@
 package com.example.dell.car_login;
 
-import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -18,6 +17,7 @@ import org.json.JSONObject;
 public class Admin_signup extends AppCompatActivity {
     EditText Admname,Admcontact,Admemail,Admndob,Admpass,Admcpass;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +28,8 @@ public class Admin_signup extends AppCompatActivity {
         Admndob=(EditText)findViewById(R.id.dob);
         Admpass=(EditText)findViewById(R.id.pass);
         Admcpass=(EditText)findViewById(R.id.cpass);
+
+
 
     }
 
@@ -78,8 +80,7 @@ public class Admin_signup extends AppCompatActivity {
             Toast.makeText(Admin_signup.this,"password do not match",Toast.LENGTH_SHORT).show();
             return;
         }
-        SharedPreferences sp = getSharedPreferences("admin_info2",MODE_PRIVATE);
-        String admin_name = sp.getString("admin_namee","");
+
         JSONObject jobj = new JSONObject();
         try {
             jobj.put("name_key",name);

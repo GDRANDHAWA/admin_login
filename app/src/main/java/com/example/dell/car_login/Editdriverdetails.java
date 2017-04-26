@@ -30,8 +30,8 @@ public class Editdriverdetails extends AppCompatActivity {
 
         dname.setText(getIntent().getStringExtra("name_key"));
         dcontact.setText(getIntent().getStringExtra("contact_key"));
-        demail.setText(getIntent().getStringExtra("age_key"));
-        dage.setText(getIntent().getStringExtra("email_key"));
+        demail.setText(getIntent().getStringExtra("email_key"));
+        dage.setText(getIntent().getStringExtra("age_key"));
         adrivinglicense.setText(getIntent().getStringExtra("vehicleno_key"));
         dcarassigned.setText(getIntent().getStringExtra("drivinglicense_key"));
 

@@ -1,6 +1,7 @@
 package com.example.dell.car_login;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -18,10 +19,15 @@ DrawerLayout dr1;TextView adminname;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_menu);
         dr1=(DrawerLayout)findViewById(R.id.drawer2);
-        adminname=(TextView)findViewById(R.id.admin);
+        adminname=(TextView)findViewById (R.id.admin);
+        SharedPreferences sp = getSharedPreferences("admin_info",MODE_PRIVATE);
+        String adminnamee = sp.getString("name_id" , "");
+        adminname.setText(adminnamee);
 
 
-    }public void adminnmenu(View v ){
+
+    }
+    public void adminnmenu(View v ){
         Intent i = new Intent(admin_menu.this,User_signup.class);
         startActivity(i);
     }
@@ -70,4 +76,8 @@ DrawerLayout dr1;TextView adminname;
         startActivity(i);
     }
 
+    public void viewreports(View view) {
+        Intent i = new Intent(admin_menu.this,Adminreport.class);
+        startActivity(i);
+    }
 }

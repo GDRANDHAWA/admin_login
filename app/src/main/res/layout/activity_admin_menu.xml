@@ -179,6 +179,8 @@
             android:layout_weight="0.9"
             android:background="#9b9999"
             android:layout_margin="2.5dp"
+            android:clickable="true"
+            android:onClick="viewreports"
             >
 
             <TextView
